@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title> Insurance Premium</title>
+    
+  
+  
+  </head>
+  
+  <body style="background-color: #3498DB;" >
+  <font color="white"> 
+  
+  
+  
+  
+  
+  <body>
+    <h1>
+	     
+       
+	 
+        <div style="text-align:center">Insurance Premium Prediction
+        	<h4>No one can surely predict the future. But we can protect it.</h4>
+        </div>
+    </h1>
+    <form style="text-align:right;" method="POST" action="/report">
+      <input type="submit" value="Training data report" class="btn btn-outline-light" name="report" />
+    </form>
+    <form style="text-align:right" method="POST" action="/training_detail">
+              <input type="submit" value="training process details" class="btn btn-outline-light" name="training_detail" />
+          </form>
+
+    <hr/>
+    
+	
+	
+	
+	<div class= "container-fluid">
+    <div class="row">	
+	
+	
+	
+	<div style="max-width:500px;margin:auto;">
+	
+	
+	
+	<form class="row g-6" method="POST" action="/predict" >
+	    
+	  <div class="col-md-6">
+	  
+
+    Age
+	<br>
+	<input  type="number" placeholder="age" name = "age">
+    <br>
+	
+	</div>
+	<div class="col-md-6">
+	
+    BMI 
+	<br><input  type="number" step = "0.01" placeholder="bmi" name = "bmi" aria-label=".form-control-lg example">
+    <br>
+	<br>
+	<br>
+	
+	</div>
+	<div class="col-md-6">
+    Number of Children 
+	<br>
+	<input  type="number" placeholder="children" name = "children" aria-label=".form-control-lg example">
+    <br>
+	<br>
+	</div>
+	<br>
+	<br>
+	
+	
+	<div class="col-md-6">
+	
+    Gender
+<br>
+	<input type="radio" id="sex" name="sex" value="male"/> Male
+         <br>
+         <input type="radio" id="sex" name="sex" value="female"/> Female
+    <br>
+	<br>
+	<br>
+	
+	</div>
+	
+	
+	
+	
+	
+	<div class="col-md-6">
+	
+    Smoker
+	<br>
+
+	<input type="radio" id="smoker" name="smoker" value="yes"/> Yes
+    <br>
+	
+    <input type="radio" id="smoker" name="smoker" value="no"/> No
+    <br>
+	<br>
+	</div>
+	
+	<div class="col-md-6">
+    Region
+	<br>
+	<input type="radio" id="region" name="region" value="southeast"/> Southeast  region
+    <br>
+
+    <input type="radio" id="region" name="region" value="southwest"/> Southwest  region
+    <br>
+    <input type="radio" id="region" name="region" value="northeast"/> Northeast  region
+    <br>
+    <input type="radio" id="region" name="region" value="northwest"/> Northwest  region
+    <br>
+	<br>
+	<br>
+	</div>
+	<br>
+	<br>
+    
+    
+    <input type="submit" value="predict">
+
+    <hr/>
+
+
+</form>
+
+</div>
+</div>
+</div>
+   <section id="about">      
+            <h2 >About Premium prediction</h2>
+            <p class="about-content" style="text-align: left;color: #ffc300;">Premium prediction is a web app which has 
+            a Machine Learning model running at the back. The purpose of developing this app is to 
+            predict the insurance premium costing  of the people. The codes for this project can be checked in my repo.
+            basically, its predict the insurance costing based on the some health condition and situation of the person.
+            </p>
+      </section>
+      <section id="info">
+      <div>
+        <h2>About Developer</h2>
+        <img style="max-width: 10%; height: 20%;" src="{{url_for('static', filename='naman.jpg')}}" />
+        <p>
+        Developed with ❤️ by Naman Kumar
+      </p> 
+
+        <p class="about-content"style="text-align: left;color: #ffc300;"> Hi, I'm Naman kumar, a Data Science Enthusiast from India. 
+          Currently, I'm learning ML, DL, CV & NLP. I have an experience as a machine learning  Intern in a 
+          company called ineuron. Now currently I am trying to do some self - paced projects in data science like Rainy Brain, Smart Attendance System,  etc.. I also have experience of leading team. I am also trying
+          to do some projects on artificial inteligence . I Always curious to learn something new in
+          the field of Data Science. Beside's programming, I enjoy playing games and watching youtube. 
+          Below I have given my social media links. Happy to have new connections.</p>
+      </div>
+    </section>
+
+
+
+  </font>
+
+   
+  </body>
+</html>
